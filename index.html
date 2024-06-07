@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Dhiraj Arya</title>
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- style link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+       <nav class="nav" id="nav">
+          <ul class="links">
+            <li class="active">
+              <a href="#home">
+                <i class="fa-solid fa-house"></i> <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <i class="fa-solid fa-palette"></i> <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="fa-solid fa-user-tie"></i> <span>Who am I ?</span>
+              </a>
+            </li>
+          </ul>
+          <div class="move" id="move">
+            <i class="fa-solid fa-up-down-left-right"></i>
+          </div>
+        </nav>
+      <aside class="sidebar">
+        <img
+          src="./Assets/profile_pic.png"
+          alt="Profile Photo for Dhiraj Arya"
+          class="profile_pic"
+        />
+        <div class="soical_icon">
+          <ul>
+            <li class="row">
+              <a href="https://github.com/dhirajaryaa">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/dhirajaryaa">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="row">
+              <a href="https://github.com/dhirajaryaa">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/dhirajaryaa">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="content-box">
+        <div class="scroll_watcher"></div>
+        <section class="hero">
+          <img src="/Assets/code.png" alt="vscode" class="ig item1" />
+          <img src="/Assets/html.png" alt="html" class="ig item2" />
+          <img src="/Assets/css.png" alt="css" class="ig item3" />
+          <img src="/Assets/js.png" alt="js" class="ig item4" />
+          <img src="/Assets/github.png" alt="github" class="ig item5" />
+          <img src="/Assets/chat-gpt.png" alt="chat-gpt" class="ig item6" />
+          <img src="/Assets/react.png" alt="react" class="ig item7" />
+          <img src="/Assets/terminal.png" alt="terminal" class="ig item8" />
+          <div class="hero_content">
+            <div class="back"></div>
+            <div class="center_box">
+              <div class="line line_1">
+                <p>01</p>
+                <h2>Hii, I',m <span>Dhiraj .</span></h2>
+              </div>
+              <div class="line line_2">
+                <p>02</p>
+                <h2>I <span>design</span> and <span>develop </span></h2>
+              </div>
+              <div class="line line_3">
+                <p>03</p>
+                <h2><span>web sites .</span></h2>
+              </div>
+            </div>
+            <h4 class="text_2">I also develop your branding, site...</h4>
+          </div>
+          <a class="scroll_btn" href="#conversation">
+            Scroll <i class="fa-solid fa-circle-arrow-down"></i>
+          </a>
+        </section>
+        <section class=" conversation " id="conversation">
+            <div class="chat-box">
+              <div class="chat-message user1">
+                <img src="/Assets/user1.png" alt="User 1" class="user-img">
+                <div class="message"><h3>
+                  I need a <span>web site</span> for my <span>company</span>,
+                  <br>
+                  Our focus is on providing <span>digital services</span> tailored to empower and support budding entrepreneurs.
+                </h3></div>
+              </div>
+              <div class="chat-message user2">
+                <img src="/Assets/profile_pic.png" alt="User 2" class="user-img">
+                <div class="message">
+                  <h3>
+                    Okay, great!
+                    <br>
+I take care of everything, first the <span>design</span> that I share with you. Once validated,<br>
+I <span>develop</span> your <span>web site</span>, before putting it online!
+                  </h3>
+                </div>
+              </div>
+              <div class="chat-message user1">
+                <img src="/Assets/user1.png" alt="User 1" class="user-img">
+                <div class="message"><h3>
+                  Perfect, when do we start ?
+                </h3></div>
+              </div>
+            </div>
+            <h3 class="bottom">Now!</h3>
+        </section>
+      </main>
+    </div>
+    <!-- ================= script add ==================== -->
+    <script src="logic.js"></script>
+  </body>
+</html>
