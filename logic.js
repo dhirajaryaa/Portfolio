@@ -1,3 +1,4 @@
+// drag and drop navbar start
 const nav = document.getElementById("nav");
 const moveCurs = nav.querySelector(".move");
 
@@ -58,3 +59,6 @@ function endDrag(event) {
   document.removeEventListener("mouseup", endDrag);
   document.removeEventListener("touchend", endDrag);
 }
+// drag and drop navbar end
+
+
