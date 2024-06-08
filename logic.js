@@ -61,4 +61,14 @@ function endDrag(event) {
 }
 // drag and drop navbar end
 
+// nav active 
+const navLinks = document.querySelectorAll(".links_child");
+navLinks.forEach((node)=>{
+node.addEventListener("click",()=>{
+  navLinks.forEach((link)=>{
+    link.classList.remove("active")
+  })
+  node.classList.add('active')
 
+})
+});

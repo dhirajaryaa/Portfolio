@@ -51,7 +51,7 @@
   z-index: 2;
 }
 .sidebar:hover,
-.nav:hover .sidebar {
+.main .nav:hover .main .sidebar {
   box-shadow: 2px 2px 30px 0 var(--hover);
 }
 .sidebar .profile_pic {
@@ -67,6 +67,7 @@
   z-index: 100;
   width: 300px;
 }
+
 .main .nav .links {
   width: 100%;
   display: flex;
@@ -78,6 +79,7 @@
   width: 60%;
   margin: 0.8rem auto;
   list-style: none;
+  transition: all 2s;
 }
 .main .nav .links li a {
   height: 45px;
