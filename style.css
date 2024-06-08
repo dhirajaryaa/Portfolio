@@ -50,7 +50,8 @@
   justify-content: space-between;
   z-index: 2;
 }
-.sidebar:hover ,.nav:hover .sidebar{
+.sidebar:hover,
+.nav:hover .sidebar {
   box-shadow: 2px 2px 30px 0 var(--hover);
 }
 .sidebar .profile_pic {
@@ -298,7 +299,7 @@
 /* =========== conversation box Start ================= */
 .content-box .conversation {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +349,7 @@
   color: var(--overlay);
   font-family: 500;
 }
-.conversation .bottom{
+.conversation .bottom {
   width: 100%;
   text-align: center;
   font-size: 1.9rem;
@@ -360,10 +361,97 @@
 }
 /* =========== conversation box End ================= */
 
+/* =========== about box start ================= */
+.content-box .about {
+  width: 100%;
+  height: 100vh;
+  margin: 2rem 0 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content-box .about .profile_img {
+  width: 40%;
+  padding: 2rem;
+  overflow: hidden;
+  transition: 0.6s ease all;
+}
+.content-box .about .profile_img:hover {
+  transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(3deg);
+}
+.content-box .about .profile_img:hover img {
+  filter: grayscale(0);
+  box-shadow: 2px 2px 30px 3px var(--overlay);
+}
+.content-box .about .profile_img img {
+  border-radius: 2rem;
+  box-shadow: 2px 2px 0px 0px var(--overlay);
+  filter: grayscale(1);
+  width: 100%;
+  /* max-height: 19rem; */
+  transition: all ease-in-out 0.5s;
+  object-fit: cover;
+}
+.content-box .about .content {
+  width: 60%;
+}
+.content-box .about .content h3{
+ font-size: 2.3rem;
+ font-weight: 600;
+ margin: 1rem auto 0.2rem;
+ color: var(--font1);
+}
+.content-box .about .content span{
+ font-size: 1.1rem;
+ letter-spacing: 3px;
+ font-weight: 500;
+ color: var(--hover);
+
+}
+.content-box .about .content p{
+ font-size: 1rem;
+ padding: 2rem 0;
+ line-height: 1.4rem;
+ font-weight: 600;
+ color: var(--font1);
+}
+.content-box .about .content p span{
+  margin: 0.7rem 0 0;
+ font-size: 1rem;
+ display: block;
+ letter-spacing: normal;
+ font-weight: 600;
+ line-height: normal;
+ color: var(--font1);
+}
+.content-box .about .content p span strong{
+ font-weight: 800;
+}
+.content-box .about .content .contact{
+width: 100%;
+padding: 2rem ;
+}
+.content-box .about .content .contact a{
+padding: 1.2rem 2.5rem ;
+color: var(--font1);
+background-color: var(--bg1);
+border-radius: 1.5rem;
+text-decoration: none;
+font-size: 1.6rem;
+font-weight: 700;
+box-shadow: 2px 2px 20px 0 rgba(172, 172, 172, 0.4);
+transition: all ease-in-out 0.5s;
+}
+.content-box .about .content .contact a:hover{
+box-shadow: 2px 2px 20px 0 var(--overlay);
+}
+/* =========== about box End ================= */
+
 /* =========== responsive sidebar ================= */
 @media screen and (max-width: 745px) {
   .sidebar {
-display: none;
+    display: none;
   }
   .main .nav {
     width: 45px;
@@ -383,7 +471,7 @@ display: none;
     padding: 8px 12px;
     border-radius: 10px;
   }
- .nav .move.drag {
+  .nav .move.drag {
     cursor: move;
   }
   .nav .move i {
@@ -394,20 +482,20 @@ display: none;
   .sidebar:hover {
     box-shadow: none;
   }
-.nav .links {
+  .nav .links {
     padding: 5px;
   }
   .main .nav .links li a {
     height: 20px;
   }
-.nav .links li i{
+  .nav .links li i {
     font-size: 1.2rem;
   }
-.nav .links li{
+  .nav .links li {
     margin: 0;
   }
   .sidebar .profile_pic,
-.nav .links li a span,
+  .nav .links li a span,
   .sidebar .soical_icon {
     display: none;
   }
@@ -425,9 +513,9 @@ display: none;
   }
   .content-box .conversation {
     scroll-snap-align: start;
-    margin: 2rem auto;
+    margin: 2rem auto 1rem;
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
   }
   .conversation .chat-box {
     padding: 0.2rem;
@@ -446,6 +534,21 @@ display: none;
     max-width: 130%;
     padding: 1rem;
     border-radius: 1.5rem;
+  }
+  .content-box .about {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-box .about .content {
+    width: 90%;
+  }
+  .content-box .about .profile_img {
+    width: 70%;
+    /* height: 40rem; */
+  }
+  .content-box .about .profile_img img {
+    max-height: 100%;
   }
 }
 
