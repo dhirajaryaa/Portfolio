@@ -585,6 +585,16 @@ box-shadow: 2px 2px 20px 0 var(--overlay);
     height: 30px;
   }
 }
+@media screen and (max-width: 400px){
+  .content-box .about .profile_img{
+  transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(3deg);
+
+  }
+  .content-box .about .profile_img img {
+    filter: grayscale(0);
+    box-shadow: 2px 2px 30px 3px var(--overlay);
+  }
+}
 
 /* ========== animation start =========== */
 
