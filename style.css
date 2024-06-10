@@ -51,7 +51,7 @@
   z-index: 2;
 }
 .sidebar:hover,
-.main .nav:hover .main .sidebar {
+.main .nav:hover + .sidebar {
   box-shadow: 2px 2px 30px 0 var(--hover);
 }
 .sidebar .profile_pic {
